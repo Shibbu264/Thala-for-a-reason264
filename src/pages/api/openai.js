@@ -23,7 +23,7 @@ export default async function handler(req, res) {
 
       // Make a request to the OpenAI API
       const response = await openai.chat.completions.create({
-        model: 'gpt-3.5-turbo',
+        model: process.env.VERSION,
        messages:[{"role":"user","content":`"questions": [
         Prompt : ${prompt}
 
