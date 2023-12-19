@@ -2,6 +2,7 @@ import React, { useState, ChangeEvent, MouseEvent, useRef, useEffect } from 'rea
 import axios from 'axios';
 import { Audio } from 'react-loader-spinner'
 import CONNECTWITHME from '@/components/mycontact';
+import Image from 'next/image';
 
 // Import react-loader
 export default function Homepage() {
@@ -40,7 +41,14 @@ export default function Homepage() {
 
   return (
     <main className="min-h-screen justify-between">
-      <img className='block w-52 h-52 mt-4 mx-auto' src='/thalajpg.jpg'/>
+      
+     <Image
+  src="/thalajpg.jpg"
+  alt="Thala Image"
+  width={150}
+  height={120}
+  className="block mt-4 mx-auto"
+/>
       <h1 className='text-3xl text-center font-bold h-3 my-10'>This is Thalaverse and We are just living in it. !</h1>
       <div className='text-center gap-4'>
         
