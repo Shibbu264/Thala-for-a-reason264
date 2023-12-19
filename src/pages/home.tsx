@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Audio } from 'react-loader-spinner'
 import CONNECTWITHME from '@/components/mycontact';
 import Image from 'next/image';
+import Head from 'next/head';
 
 // Import react-loader
 export default function Homepage() {
@@ -40,6 +41,15 @@ export default function Homepage() {
   };
 
   return (
+    <>
+    <Head>
+       
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        />
+        
+      </Head>
     <main className="min-h-screen justify-between">
       
      <Image
@@ -93,5 +103,6 @@ export default function Homepage() {
 <CONNECTWITHME/>
       </div>
     </main>
+    </>
   );
 }

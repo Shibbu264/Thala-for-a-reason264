@@ -1,3 +1,4 @@
+import Head from "next/head"
 
 
 export default function  CONNECTWITHME ()
@@ -5,6 +6,15 @@ export default function  CONNECTWITHME ()
 
 return(
 <>
+
+<Head>
+        {/* Add Tailwind CSS */}
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+        />
+        {/* Add any other head elements you need */}
+      </Head>
     <h1 className="text-center my-3 font-semibold text-3xl">Connect with me </h1>  
     <div className="flex flex-col items-center sm:flex-row gap-2 justify-center">
     <a href="https://github.com/Shibbu264" target="_blank">
