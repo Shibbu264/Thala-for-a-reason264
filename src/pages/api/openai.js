@@ -1,5 +1,5 @@
 import {  OpenAI } from 'openai';
-const apiKey = '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';
+const apiKey = process.env.OPENAIKEY;
 //
 const openai = new OpenAI({apiKey});
 import Cors from 'cors';
