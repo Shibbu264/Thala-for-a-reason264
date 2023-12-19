@@ -36,7 +36,7 @@ export default function Homepage() {
     } catch (error) {
       setIsLoading(false)
       console.error('Error calling OpenAI API:', error);
-      setApiResponse('Error: Could not fetch response from OpenAI');
+      setApiResponse('Api limit exceeded try again later');
     }
   };
 
